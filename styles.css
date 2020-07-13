@@ -1,0 +1,57 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+/* variables */
+:root {
+  --DarkBlue: hsl(240, 38%, 20%);
+  --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+/*background*/
+.background-img {
+  z-index: -99;
+}
+
+img[alt="quotes"] {
+  top: 40%;
+  left: 25%;
+}
+body {
+  overflow: hidden;
+  font-family: "Inter";
+}
+
+/* slider */
+
+.slider-container {
+  top: 28%;
+  left: 17%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile-img {
+  position: relative;
+  top: -5vh;
+  margin-left: 45vw;
+}
+
+.profile-text {
+  z-index: 1;
+  top: 30%;
+  font-size: 1.7rem;
+  width: 50vw;
+  color: var(--DarkBlue);
+}
+.second-slide {
+  display: none;
+  margin-left: 0vw;
+}
+
+button[type="button"] {
+  top: 76%;
+  right: 25%;
+}
+
+.author-name {
+  color: var(--DarkBlue);
+}
