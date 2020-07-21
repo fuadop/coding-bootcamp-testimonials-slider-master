@@ -69,6 +69,7 @@ button[type="button"] {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    padding-right: 1rem;
   }
 
   .background-img{
@@ -114,12 +115,16 @@ button[type="button"] {
     position: fixed;
     z-index: 3;
     top: 55vh;
-    width: 100vw;
+    left: 10vw;
+    width: 98vw;
     margin: 0 !important;
     padding: 10px;
+    padding-right: 2rem;
     font-size: 1.2rem;
     margin-right: 1rem;
     overflow: visible;
+    text-align: center;
+    box-sizing: content-box;
   }
   button[type="button"]{
     z-index: 3;
@@ -132,6 +137,7 @@ button[type="button"] {
     bottom: 5vh;
     overflow: visible;
     margin: 0;
+    text-align: center;
   }
 
 }
