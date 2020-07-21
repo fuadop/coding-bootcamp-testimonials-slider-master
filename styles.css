@@ -36,6 +36,7 @@ body {
 }
 
 .profile-text {
+  position: absolute;
   z-index: 1;
   top: 30%;
   font-size: 1.7rem;
@@ -54,4 +55,83 @@ button[type="button"] {
 
 .author-name {
   color: var(--DarkBlue);
+}
+
+/* media queries */
+@media (max-width: 600px) {
+  * {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  body{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .background-img{
+    position: fixed;
+    z-index: -999;
+  }
+
+  img[src = "images/pattern-curve.svg"]{
+    width: 100vw;
+    height: 5vh;
+    bottom: 0;
+  }
+  img[src="images/pattern-bg.svg"]{
+    width: 70vw;
+    height: 50vh;
+    margin-right: 20vw;
+    padding-left: 0;
+    top: 6vh;
+    left: 22vw;
+  }
+  img[src="images/pattern-quotes.svg"]{
+    width: 50px;
+    height: 50px;
+    top: 51vh;
+    left: 50vw;
+    z-index: 1;
+  }
+  .profile-img{
+    max-width: none;
+    width: 220px !important;
+    height: 220px !important;
+    top: 13vh;
+    left: 30vw;
+    z-index: 2;
+    position: fixed;
+    margin: 0;
+  }
+  .first-slide,.second-slide{
+    overflow: visible;
+  }
+  .profile-text{
+    display: block;
+    position: fixed;
+    z-index: 3;
+    top: 55vh;
+    width: 100vw;
+    margin: 0 !important;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    overflow: visible;
+  }
+  button[type="button"]{
+    z-index: 3;
+    box-shadow: none !important;
+    top: 42vh;
+    left: 50vw;
+  }
+  .attribution{
+    position: fixed;
+    bottom: 5vh;
+    overflow: visible;
+    margin: 0;
+  }
+
 }
